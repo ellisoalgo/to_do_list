@@ -1,0 +1,12 @@
+.header{
+
+    font-family: var(--title);
+    font-size: 80px;
+    color: var(--black);
+    padding: 10px;
+    border-bottom: solid 1px var(--black);
+
+    @media screen and (min-width: 760px) {
+        padding: 20px;
+    }
+}
