@@ -1,22 +1,40 @@
 :root {
 
     /** LIGHT MODE **/
+
+    //main bg: 
     --purple: #D2BBF2;
+    //task background: 
     --yellow: #F2EA79;
-    --orange: #F2C572;
+    //delete + add button: 
     --red: #F26E50;
+    //main text: 
     --black: #0D0D0D;
-    --grey: #242424;
-    --light-grey: #3b3b3b;
+    //placeholder: 
     --dark-600: #898989;
 
+    @media (prefers-color-scheme: dark){
+        --purple: #0d0d0d;
+        --yellow: #242424;
+        --red: #6e6e6e;
+        --black: #898989;
+        --dark-600: #545454;
+
+    }
 
     /** DARK MODE */
+
+    //background:
     --color-surface-100: #0d0d0d;
-    --color-surface-200: #242424;
+    //task background: 
+    --color-surface-200: #242424; 
+    //filter background:
     --color-surface-300: #3b3b3b;
+    //navbar bg:  
     --color-surface-400: #545454;
+    //modal + dialog bg: 
     --color-surface-500: #6e6e6e;
+    //text on background: 
     --color-surface-600: #898989;
 
 
