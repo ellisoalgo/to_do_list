@@ -26,6 +26,8 @@
             display: flex;
             justify-content: flex-start;
             width: fit-content;
+            flex-direction: column;
+            gap: 10px;
 
             .add-task, .filter-task{
                 display: flex;
@@ -67,11 +69,36 @@
             }
 
             .search{
-                padding: 2px 6px;
+                padding: 4px 6px;
                 color: var(--dark-600);
                 font-size: 13px;
             }
+
+            .hideDone{
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                gap: 5px;
+                padding: 3px 6px;
+                border: solid 1px var(--purple);
+                border-radius: 20px;
+
+                &_text{
+                    font-family: var(--task-font);
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: var(--yellow);
+                    padding-left: 6px;
+                }
+
+                &_button{
+                    background-color: transparent;
+                    border: none;
+                    color: var(--yellow);
+                }
+            }
         }
+
 
         @media screen and (min-width: 760px) {
             max-width: fit-content;
@@ -97,11 +124,18 @@
             &_item{
                 display: flex;
                 justify-content: space-between;
+                gap: 30px;
 
-                &-name{
-                    font-family: var(--task-font);
-                    font-weight: 400;
-                    font-size: 16px;
+                &-taskcheck{
+                    display: flex;
+                    gap: 30px;
+
+                    &-name{
+                        font-family: var(--task-font);
+                        font-weight: 400;
+                        font-size: 16px;
+                        text-align: left;
+                    }
                 }
 
                 &-button{
@@ -129,4 +163,8 @@
     }
 
    
+}
+
+.completed{
+    text-decoration: line-through;
 }
