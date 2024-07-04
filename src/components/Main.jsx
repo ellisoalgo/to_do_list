@@ -61,7 +61,6 @@ const Main = () => {
     }
   
     //Render
-  
     const renderTasks = () => {
       return tasks
         .filter((task) => {
